@@ -1,0 +1,65 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Selecao-Supera",
+		"_postman_id": "435fa928-7a1d-182b-4365-75636992e2d9",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET-Movimentacao",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8080/v1/conta-bancaria/1/movimentacao?periodoDataInicio=2018-01-01T08:00:00",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"conta-bancaria",
+						"1",
+						"movimentacao"
+					],
+					"query": [
+						{
+							"key": "periodoDataInicio",
+							"value": "2018-01-01T08:00:00",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "periodoDataFim",
+							"value": "2020-05-04T08:12:45",
+							"equals": true,
+							"description": "",
+							"disabled": true
+						},
+						{
+							"key": "operadorNome",
+							"value": "Beltrano",
+							"equals": true,
+							"description": "",
+							"disabled": true
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {},
+				"description": "API para retorno de movimentações por id de conta bancária"
+			},
+			"response": []
+		}
+	]
+}
